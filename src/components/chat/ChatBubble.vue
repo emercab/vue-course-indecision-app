@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-  import { computed } from 'vue';
+  import { computed } from "vue";
 
   interface Props {
     message: string;
@@ -21,9 +21,9 @@
 
   const props = defineProps<Props>();
 
-  const bgStyle = computed(() => (props.itsMine ? 'bg-blue-200' : 'bg-gray-300'));
+  const bgStyle = computed(() => (props.itsMine ? "bg-blue-200" : "bg-gray-300"));
 
-  const messageStyle = computed(() => (props.itsMine ? 'flex justify-end' : 'flex'));
+  const messageStyle = computed(() => (props.itsMine ? "flex justify-end" : "flex"));
 </script>
 
 <style scoped></style>
