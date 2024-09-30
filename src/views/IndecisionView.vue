@@ -1,5 +1,6 @@
 <!-- Fuente: https://tailwindcomponents.com/component/chat-layout -->
 <template>
+  <MyCounter />
   <ChatContainer>
     <ChatHeader title="Hija querida" />
 
@@ -14,6 +15,7 @@
   import ChatHeader from "@/components/chat/ChatHeader.vue";
   import ChatMessages from "@/components/chat/ChatMessages.vue";
   import MessageBox from "@/components/chat/MessageBox.vue";
+  import MyCounter from "@/components/MyCounter.vue";
   import { useChat } from "@/composables/useChat";
 
   const { messages, addMessage } = useChat();
